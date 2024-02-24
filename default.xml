@@ -2,6 +2,7 @@
 <manifest>
   <remote  name="anbox" fetch="https://github.com/anbox/" revision="anbox/master" />
   <remote  name="ananbox" fetch="https://github.com/ananbox/" revision="anbox/master" />
+  <remote  name="cm" fetch="https://github.com/CyanogenMod/" revision="cm-14.0" />
 
   <remote  name="aosp"
            revision="refs/tags/android-7.1.1_r13"
@@ -520,4 +521,7 @@
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
   <project path="vendor/anbox" name="anbox" remote="ananbox" revision="master" />
+  <project path="external/libtruezip" name="android_external_libtruezip" remote="cm" />
+  <project path="packages/apps/CMFileManager" name="android_packages_apps_CMFileManager" remote="cm" />
+  <project path="external/cyanogen/UICommon" name="android_external_cyanogen_UICommon" remote="cm" />
 </manifest>
